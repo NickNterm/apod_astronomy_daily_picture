@@ -1,0 +1,13 @@
+1) add basic dependencies. Useful ones are the following: dartz, equatable, http, flutter_bloc, mocktail, get_it, data_connection_checker
+2) create basic stracture. Create the first feature and add data, domain, presentation folders. Then add entities, repositories, usecases at domain layer
+3) create the first entity. It should be a simple class with final fields and a constructor. It should implement Equatable
+4) create the first repository. It should be an interface with a the methods you will need for the certain feature.
+5) create the same directory structure at test folder. You write your first test for the first usecase. 
+6) you are in the red phase cause you didn't write the implementation for the usecase. You write the implementation for the usecase and you should have a param with the repository you want. You are in the green phase now.
+7) then your test should be working
+8) now you can move on and write your first model implementation for the first entity. You should have a class that extends the entity. You can write a test to check if the model extends the entity
+9) then you need to test the other functions of the model like the to json and from json.
+10) create some fixture files and write a script to read json and convert it to a string.
+11) then implement the repository. Get the remote data source, local data source and the network info as params and make the neseccary tests.
+12) now its time to implement the local data source code. create first the tests and then you can move on to the implementation.
+

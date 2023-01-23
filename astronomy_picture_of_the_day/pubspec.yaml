@@ -1,0 +1,62 @@
+name: astronomy_picture_of_the_day
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  # dependency injection: 
+  get_it: ^7.2.0
+
+  # state managment
+  flutter_bloc: ^8.1.1
+
+  # checking if 2 objects are equal
+  equatable: ^2.0.5
+
+  # using to return 2 variables from function
+  dartz: ^0.10.1
+
+  # http client to request data
+  http: ^0.13.5
+
+  # latest saved state of the app
+  shared_preferences: ^2.0.16
+
+  # cheking the data connection
+  connectivity_plus: ^2.3.9
+
+  # date formatting
+  intl: ^0.18.0
+
+  # cache the loaded image
+  cached_network_image: ^3.2.1
+
+  # google fonts
+  google_fonts: ^3.0.1
+  flutter_launcher_icons: ^0.11.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # for testing the app
+  mocktail: ^0.3.0
+
+  flutter_lints: ^2.0.0
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
