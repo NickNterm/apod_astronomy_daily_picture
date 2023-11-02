@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.astronomy_picture_of_the_day">
+    package="com.iqsoft.astronomy_fact">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Astronomy Fact"
         android:name="${applicationName}"

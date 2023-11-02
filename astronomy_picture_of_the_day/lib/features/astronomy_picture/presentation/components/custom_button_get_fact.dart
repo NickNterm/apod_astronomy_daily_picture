@@ -22,7 +22,8 @@ class CustomButtonGetFact extends StatelessWidget {
 
           if (pickedDate != null) {
             if (!mounted) return;
-            BlocProvider.of<AstronomyfactBloc>(context).add(GetAstronomyFactEvent(pickedDate));
+            BlocProvider.of<AstronomyfactBloc>(context)
+                .add(GetAstronomyFactEvent(pickedDate));
           }
         },
         child: Ink(

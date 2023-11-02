@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../domain/entities/astronomy_fact.dart';
+import '../../domain/entities/astronomy_fact.dart';
 
 class AstronomyFactCard extends StatelessWidget {
   const AstronomyFactCard({
@@ -18,7 +18,7 @@ class AstronomyFactCard extends StatelessWidget {
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Colors.grey[100],
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: BorderRadius.circular(25),
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.3),
@@ -38,11 +38,7 @@ class AstronomyFactCard extends StatelessWidget {
                 imageUrl: fact.imageUrl,
                 height: 230,
                 fit: BoxFit.cover,
-                placeholder: (context, url) => const SizedBox(
-                  height: 20,
-                  width: 20,
-                  child: CircularProgressIndicator(),
-                ),
+                placeholder: (context, url) => const CircularProgressIndicator(),
               ),
             ),
           ),

@@ -26,7 +26,29 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
-          primarySwatch: Colors.indigo,
+          primarySwatch: Colors.red,
+          colorScheme: const ColorScheme.light(
+            primary: Colors.indigo,
+            secondary: Colors.indigo,
+          ),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.indigo,
+            elevation: 0,
+          ),
+
+          dialogTheme: const DialogTheme(
+            backgroundColor: Colors.white,
+            elevation: 0,
+            titleTextStyle: TextStyle(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+            contentTextStyle: TextStyle(
+              color: Colors.black,
+              fontSize: 16,
+            ),
+          ),
           useMaterial3: true,
           fontFamily: GoogleFonts.ubuntu().fontFamily,
           //fontFamily: GoogleFonts.poppins().fontFamily,

@@ -16,7 +16,7 @@ final sl = GetIt.instance;
 Future<void> init() async {
   // Features - AstronomyFact
   // Bloc
-  sl.registerFactory(
+  sl.registerLazySingleton(
     () => AstronomyfactBloc(
       getAstronomyFact: sl(),
     ),

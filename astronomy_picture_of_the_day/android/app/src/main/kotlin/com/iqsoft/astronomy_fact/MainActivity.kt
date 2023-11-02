@@ -1,4 +1,4 @@
-package com.example.astronomy_picture_of_the_day
+package com.iqsoft.astronomy_fact
 
 import io.flutter.embedding.android.FlutterActivity
 

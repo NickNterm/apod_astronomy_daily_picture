@@ -14,7 +14,6 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Astronomy Fact'),
-        backgroundColor: Colors.indigo,
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
@@ -26,9 +25,11 @@ class MainPage extends StatelessWidget {
             children: [
               BlocBuilder<AstronomyfactBloc, AstronomyfactState>(
                 bloc: context.read<AstronomyfactBloc>()
-                  ..add(GetAstronomyFactEvent(DateTime.now().subtract(const Duration(days: 1)))),
+                  ..add(GetAstronomyFactEvent(
+                      DateTime.now().subtract(const Duration(days: 1)))),
                 builder: (context, state) {
-                  if (state is AstronomyfactLoading || state is AstronomyfactInitial) {
+                  if (state is AstronomyfactLoading ||
+                      state is AstronomyfactInitial) {
                     return const Expanded(
                       child: Center(
                         child: CircularProgressIndicator(),
